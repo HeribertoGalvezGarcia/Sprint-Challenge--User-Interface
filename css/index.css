@@ -174,15 +174,19 @@ footer nav a {
 .boxes .box:nth-child(9) { background-color: indigo; }
 .boxes .box:nth-child(10) { background-color: dodgerblue; }
 
-.about-page.container {
+.about-page.container, .about-page section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.about-page section {
+.about-page section:nth-child(1), .about-page section > div {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+}
+
+.about-page section:last-of-type > div {
+  border: none;
 }
 
 .about-page .text-container {
