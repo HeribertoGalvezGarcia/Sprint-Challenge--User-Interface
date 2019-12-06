@@ -71,6 +71,24 @@ p {
     margin: 0 auto;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 30px 0;
+}
+
+header nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav a {
+  text-decoration: none;
+  color: black;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -143,4 +161,56 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.boxes .box:nth-child(1) { background-color: teal; }
+.boxes .box:nth-child(2) { background-color: gold; }
+.boxes .box:nth-child(3) { background-color: cadetblue; }
+.boxes .box:nth-child(4) { background-color: coral; }
+.boxes .box:nth-child(5) { background-color: crimson; }
+.boxes .box:nth-child(6) { background-color: forestgreen; }
+.boxes .box:nth-child(7) { background-color: darkorchid; }
+.boxes .box:nth-child(8) { background-color: hotpink; }
+.boxes .box:nth-child(9) { background-color: indigo; }
+.boxes .box:nth-child(10) { background-color: dodgerblue; }
+
+.about-page.container, .about-page section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.about-page section:nth-child(1), .about-page section > div {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.about-page section:last-of-type > div {
+  border: none;
+}
+
+.about-page .text-container {
+    padding: 20px 1%;
+}
+
+.about-page .full-width .text-container {
+    padding: 20px 2%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.about-page button {
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 130px;
+  height: 40px;
+  font-size: 15px;
+  margin-bottom: 20px;
 }
