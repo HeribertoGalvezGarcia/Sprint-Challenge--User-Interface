@@ -173,3 +173,40 @@ footer nav a {
 .boxes .box:nth-child(8) { background-color: hotpink; }
 .boxes .box:nth-child(9) { background-color: indigo; }
 .boxes .box:nth-child(10) { background-color: dodgerblue; }
+
+.about-page.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.about-page section {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.about-page .text-container {
+    padding: 20px 1%;
+}
+
+.about-page .full-width .text-container {
+    padding: 20px 2%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.about-page button {
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 130px;
+  height: 40px;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
